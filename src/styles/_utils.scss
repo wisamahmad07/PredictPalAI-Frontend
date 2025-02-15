@@ -1,0 +1,71 @@
+/* utility classes */
+.col-1 {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.g-30 {
+  gap: 30px;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-header {
+  color: var(--header);
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-highlight {
+  color: var(--highlight);
+}
+
+.text-10 {
+  font-size: 0.625rem;
+}
+
+.text-12 {
+  font-size: 0.75rem;
+}
+
+.text-14 {
+  font-size: 0.875rem;
+}
+
+.text-16 {
+  font-size: 1rem;
+}
+
+.border-top {
+  border-top: 1px solid var(--border);
+}
+
+.border-color-bottom {
+  border-bottom: 4px solid var(--border);
+
+  .card_footer--sm {
+    height: 69px;
+  }
+}
+
+.h-fit {
+  height: fit-content !important;
+}
+
+.card-padded {
+  padding: var(--card-padding);
+}

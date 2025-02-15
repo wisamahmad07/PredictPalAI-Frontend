@@ -1,0 +1,42 @@
+"use strict";(self.webpackChunkliga_soccer=self.webpackChunkliga_soccer||[]).push([[39],{55347:(e,r,a)=>{a.d(r,{A:()=>d});var t=a(81558),n=a(47503),s=a(24858),l=a(98139),o=a.n(l),i=a(89308),c=a(70579);const d=e=>{let{open:r,onClose:a}=e;const{register:l,handleSubmit:d,formState:{errors:m},reset:u}=(0,s.mN)(),p=()=>{u(),a()};return(0,c.jsx)(t.default,{open:r,onClose:p,children:(0,c.jsxs)("div",{className:"flex flex-col gap-5",children:[(0,c.jsxs)("div",{className:"flex flex-col gap-2.5",children:[(0,c.jsx)("h2",{children:"Reset Password"}),(0,c.jsx)("p",{children:"Enter your email address below and we'll send you a link to reset your password."})]}),(0,c.jsxs)("div",{className:"flex flex-col gap-4",children:[(0,c.jsxs)("form",{className:"flex gap-2.5",onSubmit:d((async e=>{try{await(0,i.J3)(e.email),n.oR.success(`A password reset link was sent to ${e.email}`),p()}catch(r){console.error("Error sending password reset email:",r),n.oR.error("Failed to send reset email. Please check the email address and try again.")}})),children:[(0,c.jsx)("input",{className:o()("field",{"field--error":m.email}),type:"text",placeholder:"example@domain.com",...l("email",{required:"Email is required",pattern:{value:/^\S+@\S+$/i,message:"Invalid email address"}})}),(0,c.jsx)("button",{className:"btn",type:"submit",children:"Send"})]}),m.email&&(0,c.jsx)("p",{className:"error",style:{color:"red"},children:m.email.message}),(0,c.jsx)("p",{className:"text-12",children:"If you don't receive an email within a few minutes, please check your spam folder."})]})]})})}},93187:(e,r,a)=>{a.r(r),a.d(r,{default:()=>w});var t=a(4659),n=a(65043),s=a(24858),l=a(73216),o=a(35475),i=a(5137),c=a(47503),d=a(98139),m=a.n(d),u=a(30710),p=a(99798),f=a(55347),h=a(58568),x=a(89308),g=a(91313),b=a(63178),y=a(38535),v=a(70579);const j=()=>{const[e,r]=(0,n.useState)(!1),[a,t]=(0,n.useState)(!1),[d,j]=(0,n.useState)(!1),{register:w,handleSubmit:N,formState:{errors:k},control:S}=(0,s.mN)({defaultValues:{email:"",password:"",rememberMe:!1}}),[C]=(0,y.PW)(),R=(0,l.Zp)(),A=(0,i.wA)(),O=(0,n.useCallback)((async e=>{try{return(await C(e).unwrap()).data}catch(r){console.error("Failed to create profile:",r)}}),[C]);return(0,n.useEffect)((()=>{const e=(0,x.hg)((async e=>{if(e)try{const r=await O({User_ID:e.uid,Email:e.email,Name:e.displayName});A((0,b.iD)(e)),A((0,b.ME)(r)),R("/dashboard")}catch(r){console.error("Failed to create profile:",r)}}));return()=>e()}),[A,O,R]),(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)("h1",{children:"Account login"}),(0,v.jsxs)("form",{children:[(0,v.jsxs)("div",{className:"flex flex-col gap-2.5",style:{margin:"20px 0 30px"},children:[(0,v.jsxs)("div",{className:"flex flex-col gap-5",children:[(0,v.jsx)("input",{className:m()("field",{"field--error":k.email}),type:"text",placeholder:"Login",...w("email",{required:!0,pattern:/^\S+@\S+$/i})}),(0,v.jsx)(s.xI,{control:S,name:"password",rules:{required:!0},render:e=>{let{field:{ref:r,onChange:a,value:t},fieldState:{error:n}}=e;return(0,v.jsx)(p.A,{className:m()("field",{"field--error":n}),value:t,onChange:e=>a(e.target.value),placeholder:"Password",innerRef:r})}})]}),(0,v.jsxs)("div",{className:"flex items-center gap-2.5",children:[(0,v.jsx)(s.xI,{control:S,name:"rememberMe",render:e=>{let{field:{ref:r,onChange:a,value:t}}=e;return(0,v.jsx)(h.A,{id:"rememberMe",checked:t,onChange:e=>a(e.target.checked),innerRef:r})}}),(0,v.jsx)("label",{htmlFor:"rememberMe",children:"Remember me"})]})]}),(0,v.jsxs)("div",{className:"flex justify-between items-center gap-4",children:[(0,v.jsx)("button",{className:"btn flex-1",type:"submit",onClick:N((async e=>{t(!0);try{const r=await(0,x.Ru)(e.email,e.password),a=await O({User_ID:r.uid,Email:r.email,Name:r.displayName});console.log("createdProfile",a),A((0,b.iD)(r)),A((0,b.ME)(a)),c.oR.success("Signed in successfully!"),R("/dashboard")}catch(r){c.oR.error(`Failed to sign in with email: ${r.message}`)}finally{t(!1)}})),disabled:a,children:a?(0,v.jsx)(u.A,{size:20,color:"#ffffff"}):"Sign In Now"}),(0,v.jsx)("button",{onClick:async e=>{e.preventDefault(),j(!0);try{const e=await(0,x.G6)(),r=await O({User_ID:e.uid,Email:e.email,Name:e.displayName});console.log("createdProfile",r),A((0,b.iD)(e)),A((0,b.ME)(r)),c.oR.success("Signed in with Google successfully!"),R("/dashboard")}catch(r){c.oR.error(`Failed to sign in with Google: ${r.message}`)}finally{j(!1)}},className:"btn btn--google flex-1",disabled:d,children:d?(0,v.jsx)(u.A,{size:20,color:"#ffffff"}):(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)("img",{src:g.A,alt:"Google Icon",style:{width:"20px"}}),"Sign in with Google"]})})]})]}),(0,v.jsx)("div",{className:"flex justify-center",style:{marginTop:"10px"},children:(0,v.jsxs)("p",{className:"text-12",children:["Don't have an account?"," ",(0,v.jsx)(o.k2,{to:"/sign-up",className:"text-link text-decoration-underline",children:"Create an account"})]})}),(0,v.jsx)(f.A,{open:e,onClose:()=>r(!1)})]})},w=()=>(0,v.jsx)(t.A,{title:"Login",children:(0,v.jsx)(j,{})})},58568:(e,r,a)=>{a.d(r,{A:()=>l});var t=a(94905),n=a(70579);const s=t.Ay.div`
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--widget);
+  flex-shrink: 0;
+
+  input {
+    display: none;
+
+    & + label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: pointer;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        background: ${e=>{let{color:r}=e;return r?`var(--${r})`:"var(--highlight)"}};
+        border-radius: 2px;
+        transform: translate(-50%, -50%);
+        transition: opacity var(--transition);
+        opacity: 0;
+      }
+    }
+
+    &:checked + label:after {
+      opacity: 1;
+    }
+  }
+`,l=e=>{let{id:r,onChange:a,innerRef:t,color:l,...o}=e;return(0,n.jsxs)(s,{className:"flex items-center justify-center",color:l,children:[(0,n.jsx)("input",{type:"checkbox",id:r,onChange:a,ref:t,...o}),(0,n.jsx)("label",{htmlFor:r})]})}},30710:(e,r,a)=>{a.d(r,{A:()=>c});var t=a(65043),n={cm:!0,mm:!0,in:!0,px:!0,pt:!0,pc:!0,em:!0,ex:!0,ch:!0,rem:!0,vw:!0,vh:!0,vmin:!0,vmax:!0,"%":!0};function s(e){var r=function(e){if("number"===typeof e)return{value:e,unit:"px"};var r,a=(e.match(/^[0-9.]*/)||"").toString();r=a.includes(".")?parseFloat(a):parseInt(a,10);var t=(e.match(/[^0-9]*$/)||"").toString();return n[t]?{value:r,unit:t}:(console.warn("React Spinners: ".concat(e," is not a valid css value. Defaulting to ").concat(r,"px.")),{value:r,unit:"px"})}(e);return"".concat(r.value).concat(r.unit)}var l=function(){return l=Object.assign||function(e){for(var r,a=1,t=arguments.length;a<t;a++)for(var n in r=arguments[a])Object.prototype.hasOwnProperty.call(r,n)&&(e[n]=r[n]);return e},l.apply(this,arguments)},o=function(e,r){var a={};for(var t in e)Object.prototype.hasOwnProperty.call(e,t)&&r.indexOf(t)<0&&(a[t]=e[t]);if(null!=e&&"function"===typeof Object.getOwnPropertySymbols){var n=0;for(t=Object.getOwnPropertySymbols(e);n<t.length;n++)r.indexOf(t[n])<0&&Object.prototype.propertyIsEnumerable.call(e,t[n])&&(a[t[n]]=e[t[n]])}return a},i=function(e,r,a){var t="react-spinners-".concat(e,"-").concat(a);if("undefined"==typeof window||!window.document)return t;var n=document.createElement("style");document.head.appendChild(n);var s=n.sheet,l="\n    @keyframes ".concat(t," {\n      ").concat(r,"\n    }\n  ");return s&&s.insertRule(l,0),t}("ClipLoader","0% {transform: rotate(0deg) scale(1)} 50% {transform: rotate(180deg) scale(0.8)} 100% {transform: rotate(360deg) scale(1)}","clip");const c=function(e){var r=e.loading,a=void 0===r||r,n=e.color,c=void 0===n?"#000000":n,d=e.speedMultiplier,m=void 0===d?1:d,u=e.cssOverride,p=void 0===u?{}:u,f=e.size,h=void 0===f?35:f,x=o(e,["loading","color","speedMultiplier","cssOverride","size"]),g=l({background:"transparent !important",width:s(h),height:s(h),borderRadius:"100%",border:"2px solid",borderTopColor:c,borderBottomColor:"transparent",borderLeftColor:c,borderRightColor:c,display:"inline-block",animation:"".concat(i," ").concat(.75/m,"s 0s infinite linear"),animationFillMode:"both"},p);return a?t.createElement("span",l({style:g},x)):null}}}]);
+//# sourceMappingURL=39.6e68c9f4.chunk.js.map

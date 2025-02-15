@@ -1,0 +1,19 @@
+.main {
+    padding: var(--card-padding) var(--card-padding) 24px;
+
+    &_media {
+        height: 167px;
+        margin: 27px 0 20px;
+    }
+
+    &_buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        @media screen and (min-width: 375px) {
+            flex-direction: row;
+            gap: 24px;
+        }
+    }
+}

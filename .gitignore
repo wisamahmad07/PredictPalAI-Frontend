@@ -1,0 +1,6 @@
+# Ignore node_modules and specific file in it
+node_modules/
+node_modules/largefile.zip
+
+# Ignore .env file
+.env

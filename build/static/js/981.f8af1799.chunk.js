@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkliga_soccer=self.webpackChunkliga_soccer||[]).push([[981],{99981:(a,s,e)=>{e.r(s),e.d(s,{ModalManager:()=>l.P,default:()=>c.A,getModalUtilityClass:()=>r.M,modalClasses:()=>r.A});var l=e(69545),c=e(57556),r=e(17494)}}]);
